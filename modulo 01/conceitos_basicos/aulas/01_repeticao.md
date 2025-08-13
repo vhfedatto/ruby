@@ -6,6 +6,17 @@
 
 [introdução]
 
+1. Condicionais
+a) if
+b) elsif
+c) else
+2. Repetição
+a) While
+b) Until
+c) Times
+d) Each
+e) For
+
 ## 0. O que é o "end"?
 
 O **end** é usado para fechar blocos no Ruby. Assim, ele é utilizado para indicar onde termina:
@@ -80,4 +91,97 @@ puts tem_banana ? "Chico come!" : "Chico espera."
 
 ---
 
+## 02. Estruturas de repetição
 
+É usado quando desejamos fazer uma mesma ação várias vezes até que uma condição mude. É o famoso **loop**.
+
+### While - repete enquanto algo for verdadeiro
+
+Chico joga cocos até acabar a pilha.
+
+```ruby
+cocos = 3
+
+while cocos > 0
+    puts "Chico joga um coco!"
+    cocos -= 1
+end
+
+puts "Acabaram os cocos!"
+```
+
+> Enquanto ```cocos > 0```, Chico continua jogando.
+
+### Until - Repetir até algo acontecer
+
+Exemplo: Chico pula de galho em galho **até** achar um cacho de bananas.
+
+> É o oposto do While
+
+```ruby
+achou_banana = false
+
+until achou_banana
+    puts "Chico pula para outro galho."
+    achou_banana = [true, false].sample #simula achar ou não
+end
+
+puts "Chico achou as bananas!"
+```
+
+### Times - repetir um número fixo de vezes
+
+Chico bate palma 5 vezes
+
+```ruby
+5.times do
+    puts "clap"
+end
+```
+
+### Each - Repetindo para cada item de uma lista
+
+Chico come cada banana de um cacho
+
+```ruby
+cacho = ["banana 01", "banana 02", "banana 03"]
+
+cacho.each do |banana|
+    puts "Chico come #{banana}!"
+end
+```
+
+### For in range
+
+```ruby
+for banana in cacho
+    puts "Chico come #{banana}!"
+end
+```
+
+---
+
+## Código final de revisão
+
+```ruby
+cacho = ["madura", "madura", "verde", "madura"]
+
+cacho.each do |banana|
+    if banana == "verde"
+        puts "Ops! Banana verde. Chico para de comer."
+        break
+    end
+    puts "Chico come a banana madura!"
+end
+```
+
+---
+
+## Revisão dos conceitos:
+
+- if/else → o macaco decide o que fazer.
+- while → o macaco continua até cansar.
+- until → o macaco continua até conseguir algo.
+- times → o macaco repete um número fixo de vezes.
+- each → o macaco repete para cada item de um cacho.
+- break → o macaco para tudo.
