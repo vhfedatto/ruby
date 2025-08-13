@@ -1,4 +1,6 @@
-<img src="../../../assets/banner/macaco-chico.jpg" width="60%" />
+<div align="center">
+    <img src="../../../assets/banner/macaco-chico.jpg" />
+</div>
 
 # Estrutura de Condição e Repetição
 
@@ -55,10 +57,13 @@ estado_banana = "verde"
 
 if estado_banana == "madura"
     puts "Chico come!"
+
 elsif estado_banana == "verde"
     puts "Chico espera amadurecer."
+
 else
     puts "Chico procura outra árvore."
+
 end
 ```
 
@@ -72,3 +77,7 @@ puts tem_banana ? "Chico come!" : "Chico espera."
 ```
 
 > condição ? se_verdadeiro : se_falso
+
+---
+
+
