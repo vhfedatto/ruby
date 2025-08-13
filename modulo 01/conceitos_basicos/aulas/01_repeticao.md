@@ -1,3 +1,5 @@
+<img src="../../../assets/banner/macaco-chico.jpg" width="60%" />
+
 # Estrutura de Condição e Repetição
 
 [introdução]
