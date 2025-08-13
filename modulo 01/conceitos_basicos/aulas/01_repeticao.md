@@ -7,15 +7,18 @@
 [introdução]
 
 1. Condicionais
-a) if
-b) elsif
-c) else
+   
+- if
+- elsif 
+- else
+
 2. Repetição
-a) While
-b) Until
-c) Times
-d) Each
-e) For
+
+- While
+- Until
+- Times
+- Each
+- For
 
 ## 0. O que é o "end"?
 
@@ -37,6 +40,7 @@ tem_banana = true
 
 if tem_banana
     puts "O Macaco Chico desce da árvore para comer!"
+
 end
 ```
 
