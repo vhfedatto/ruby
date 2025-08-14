@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="../../../assets/banner/banner-listas.jpg" />
+</div>
+
 # Arrays, Hashes e Métodos no Ruby
 
 ### Na Aula 01, você aprendeu:
