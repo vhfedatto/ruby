@@ -163,6 +163,22 @@ for banana in cacho
 end
 ```
 
+### Usando next
+
+O next serve para pular para a próxima iteração dentro de um loop sem executar o resto do código daquele ciclo.
+
+```ruby
+cacho = ["madura", "verde", "madura"]
+
+cacho.each do |banana|
+    if banana == "verde"
+        puts "Banana verde! Chico ignora."
+        next  # Pula para a próxima banana
+    end
+    puts "Chico comeu a banana #{banana}!"
+end
+```
+
 ---
 
 ## Código final de revisão
