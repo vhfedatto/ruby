@@ -4,23 +4,36 @@
 
 # Arrays, Hashes e Métodos no Ruby
 
-### Na Aula 01, vimos:
+<!--### Na Aula 01, vimos:
 
 - Variáveis, tipos e conversão
 - Entrada e saída (gets, puts)
 - Operadores
 - Condicionais (if, elsif, else)
-- Loops (while, until, times, each)
-
-
-
+- Loops (while, until, times, each)-->
 
 Agora vamos para estruturas de dados mais poderosas e a criação de métodos para organizar o código.
+
+[Arrays](#1-arrays-listas)
+- [Definição](#-definição-de-array)
+- [Operações Básicas](#-operações-básicas)
+- [Percorrendo Arrays](#percorrendo-arrays)
+
+[Hashes](#2-hashes-dicionários)
+- [Definição](#-definição-de-hash)
+- [Símbolos como chaves](#símbolos-como-chaves)
+- [Operações com Hashes](#operações-com-hashes)
+
+[Métodos](#3-métodos-funções)
+- [Definição](#-definição-de-método)
+- [Criando um método](#criando-um-método-simples)
+- [Métodos com parâmetros](#métodos-com-parâmetros)
+- [Retorno de parâmetros](#retorno-de-métodos)
 
 ---
 
 ## 1. Arrays (listas)
-### 📌 Definição:
+### 📌 Definição de Array:
 Um Array é como uma prateleira onde o Sr. Louis guarda pães em sequência. Cada pão está em uma posição (índice), começando no 0. Não é muito comum, mas Ruby permite que você misture dados em um array.
 
 ```ruby
@@ -73,7 +86,7 @@ end
 ---
 
 ## 2. Hashes (dicionários)
-### 📌 Definição:
+### 📌 Definição de Hash:
 Um Hash é como um cardápio da padaria: cada item tem um nome (chave) e um valor (preço, por exemplo).
 
 ```ruby
@@ -85,7 +98,7 @@ cardapio{
 
 puts cardápio["Croissant"]  # => 3.0
 ```
-### Símbolos como chaves (mais usado)
+### Símbolos como chaves
 ```ruby
 cardápio = {
   pao_frances: 0.50,
@@ -113,8 +126,8 @@ cardapio.each do |item, preço|
 end
 ```
 
-## 3. Métodos (funções no Ruby)
-### 📌 Definição:
+## 3. Métodos (funções)
+### 📌 Definição de Método:
 Um método é como uma receita que o Sr Louis segue para preparar algo. Você escreve uma vez e pode usar sempre que precisar.
 
 #### Criando um método simples
@@ -174,5 +187,3 @@ print "Digite o nome do item (ex: pao_frances): "
 item_escolhido = gets.chomp.to_sym
 pedir_item(cardápio, item_escolhido)
 ```
-
-[Arrays](#1-arrays-listas)
