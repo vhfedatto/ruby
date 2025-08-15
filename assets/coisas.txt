@@ -1,5 +1,3 @@
 Coisas para dar uma olhada depois:
 
 [].sample
-
-next -> macaco ignora e passa para a proxima
