@@ -4,15 +4,16 @@
 
 # Arrays, Hashes e Métodos no Ruby
 
-### Na Aula 01, você aprendeu:
+### Na Aula 01, vimos:
 
-- Variáveis e tipos
+- Variáveis, tipos e conversão
 - Entrada e saída (gets, puts)
 - Operadores
 - Condicionais (if, elsif, else)
 - Loops (while, until, times, each)
-- break e next
-- Conversão de tipos
+
+
+
 
 Agora vamos para estruturas de dados mais poderosas e a criação de métodos para organizar o código.
 
@@ -173,3 +174,5 @@ print "Digite o nome do item (ex: pao_frances): "
 item_escolhido = gets.chomp.to_sym
 pedir_item(cardápio, item_escolhido)
 ```
+
+[Arrays](#1-arrays-listas)
