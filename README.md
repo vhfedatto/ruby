@@ -12,7 +12,8 @@ O objetivo é documentar minha evolução, criar uma base de códigos reutilizá
 ---
 
 ## 📖 Conteúdos Abordados
-- Variáveis e tipos, Conversão
+- Variáveis, tipos e conversão
+- Operadores aritméticos e de comparação
 - Condicionais e Estruturas de Repetição
 - Array, Hash e Métodos 
 
