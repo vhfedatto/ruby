@@ -1,3 +1,5 @@
+# Fedatto's Answer 15.08.2025 #
+
 print "Digite a sua média (0-10): "
 gpa = gets.chomp.to_f
 
@@ -10,7 +12,7 @@ elsif gpa < 0
 else
   if gpa >= 7
     puts "Aprovado"
-    
+
   elsif gpa >= 5 && gpa <= 6.9
     puts "Recuperação"
 
