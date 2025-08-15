@@ -12,8 +12,7 @@ O objetivo é documentar minha evolução, criar uma base de códigos reutilizá
 ---
 
 ## 📖 Conteúdos Abordados
-- Variáveis e tipos
-- Conversão de tipos
+- Variáveis e tipos, Conversão
 - Condicionais e Estruturas de Repetição
 - Array, Hash e Métodos 
 
