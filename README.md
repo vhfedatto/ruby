@@ -1,3 +1,7 @@
+<!--<div align="center">
+   <img src="assets/icons/ruby.svg" width="100px">
+</div>-->
+
 # 📚💎 Ruby Study Repository
 
 Este repositório contém meus estudos, anotações e exercícios práticos relacionados à linguagem **Ruby** <!--<img src="assets/icons/python-icon.svg" width="16px">-->.  
@@ -32,7 +36,7 @@ O objetivo é documentar minha evolução, criar uma base de códigos reutilizá
   > É recomendado ter o Ruby 3.x instalado e configurado no PATH do sistema.
 
 ---
-<!--
+
 <div align="center">
-   <img src="assets/icons/Python.svg" width="100px">
-</div>-->
+  <img src="assets/logo/logo-fedatto.png" width="150" />
+</div>
