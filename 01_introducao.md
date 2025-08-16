@@ -1,4 +1,4 @@
-<img src="assets/banner/banner-listas.jpg" />
+<img src="assets/banner/introducao.jpg" />
 
 # INTRODUÇÃO À LINGUAGEM RUBY
 
@@ -7,9 +7,10 @@
 - [Por que aprender?](#-por-que-aprender-ruby?)
 - [Onde é usado?](#-onde-ruby-é-usado?)
 - [Bibliografia](#-bibliografia)
+- [Rodapé](#rodapé)
 
 ## 📜 História
-Ruby foi criado em 1993 (mas lançado somente em 1995), no Japão, por Yukihiro Matsumoto (Matz). Ela é uma linguagem de programação de [tipagem forte]() e [dinâmica]().
+Ruby foi criado em 1993 (mas lançado somente em 1995), no Japão, por Yukihiro Matsumoto (Matz). Ela é uma linguagem de programação de [tipagem forte](#i-tipagem) e [dinâmica](i-tipagem).
 
 O objetivo de Matz era unir a simplicidade do Perl com orientação a objetos do [Smalltalk]() adicionando a praticidade do Python e a flexibilidade do [Lisp]().
 
@@ -54,3 +55,64 @@ Os livros e documentações que utilizei para aprimorar os meus conhecimentos e 
 [📕 The Ruby Programming Language](https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf)
 
 [📕 Ruby Wizardry](https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Ruby%20Wizardry%20-%20An%20Introduction%20to%20Programming%20for%20Kids.pdf)
+
+---
+
+## Informações Adicionais
+
+### I. Tipagem
+
+> _Tipagem forte_: Ruby não deixa misturar tipos de qualquer jeito.
+
+```ruby
+10 + "5"   # dá erro ❌
+10 + "5".to_i  # funciona ✅ (vira 15)
+```
+> _Tipagem dinâmica_: Quer dizer que você não precisa dizer qual tipo a variável é.
+
+```ruby
+x = 10       # aqui é um número
+x = "olá"    # agora virou uma palavra
+```
+
+---
+
+### II. Perl 
+
+> É uma linguagem de programação criada nos anos 80, famosa por ser ótima em lidar com textos (como arquivos, relatórios, dados). Ruby se inspira na parte da praticidade e flexibilidade.
+
+> Um lema do Perl é: “_There’s more than one way to do it_” (há mais de um jeito de fazer)
+
+<div align="center">
+    <img src="assets/icons/perl-icon.svg" width="80px">
+</div>
+
+
+### III. Smalltalk
+
+> É uma linguagem criada nos anos 70. Foi uma das primeiras a trabalhar com **tudo é um objeto**. A inspiração para Ruby vem exatamente dessa ideia (tudo é objeto - inclusive números, nulo etc.). Foi muito importante na criação da **programação orientada a objetos**
+
+<div align="center">
+    <img src="assets/icons/smalltalk-icon.svg" width="110px">
+</div>
+
+
+### IV. Lisp
+
+> É uma linguagem criada nos anos 50, sendo ela, uma das mais antigas que **AINDA** existe. É famosa pelo uso de parênteses.
+
+```lisp
+(+ 1 2) ; resultado é 3
+```
+
+> Foi inspiração para Ruby na parte da flexibilidade e do poder de expressar ideias diferentes. Muitas ideias de inteligência artificial começaram em Lisp.
+
+<div align="center">
+    <img src="assets/icons/lisp-icon.svg" width="80px">
+</div>
+
+---
+<br>
+<div align="center">
+    <img src="assets/logo/logo-fedatto.png" width="170px">
+</div>
