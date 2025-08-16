@@ -10,9 +10,9 @@
 - [Rodapé](#rodapé)
 
 ## 📜 História
-Ruby foi criado em 1993 (mas lançado somente em 1995), no Japão, por Yukihiro Matsumoto (Matz). Ela é uma linguagem de programação de [tipagem forte](#i-tipagem) e [dinâmica](i-tipagem).
+Ruby foi criado em 1993 (mas lançado somente em 1995), no Japão, por Yukihiro Matsumoto (Matz). Ela é uma linguagem de programação de [tipagem forte](#i-tipagem) e [dinâmica](#i-tipagem).
 
-O objetivo de Matz era unir a simplicidade do Perl com orientação a objetos do [Smalltalk]() adicionando a praticidade do Python e a flexibilidade do [Lisp]().
+O objetivo de Matz era unir a simplicidade do [Perl](#ii-perl) com orientação a objetos do [Smalltalk](#iii-smalltalk) adicionando a praticidade do Python e a flexibilidade do [Lisp](#iv-lisp).
 
 Ruby ganhou notoriedade mundial principalmente após o lançamento do Ruby on Rails (2004–2005), um framework web que revolucionou a forma de construir aplicações, tornando o desenvolvimento mais rápido e elegante.
 
