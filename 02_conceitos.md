@@ -18,7 +18,7 @@
 ### 📝 Saída de Dados
 Quando você quer que o computador fale alguma coisa para você ("_printe_" na tela), você usa comandos de saída.
 
-#### **puts**
+#### === **puts** ===
 Sempre pula uma linha depois.
 > _Imagina que o ```puts``` é como quando você fala alto e ainda dá um “enter” no final._
 
@@ -32,7 +32,7 @@ Oi, tudo bem?
 Meu nome é Victor
 ```
 
-#### **print**
+#### === **print** === 
 
 Ele mostra, mas não pula de linha automaticamente (se quiser, use ```\n``` para pular).
 
@@ -48,7 +48,7 @@ Saída:
 Oi, tudo bem?
 ```
 
-#### **p**
+#### === **p** ===
 
 Bom para debug (testar seu código).
 
@@ -71,7 +71,7 @@ Saída:
 
 No caso da entrada de dados, é quando o computador faz uma pergunta e você responde digitando.
 
-#### 1. **gets.chomp**
+#### === **gets.chomp** ===
 Pensa que ```gets``` é como o computador **pegar** (do inglês: **to get**) o que você digitou. Ele sempre guarda como texto (String).
 
 Contudo, o ```gets``` também pega o **Enter** que você deu no final para enviar. Para isso usamos o ```.chomp```, que serve como uma tesoura, cortando o Enter final.
