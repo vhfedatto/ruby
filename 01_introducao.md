@@ -4,10 +4,10 @@
 
 ### Índice
 - [História](#-história)
-- [Por que aprender?](#-por-que-aprender-ruby?)
-- [Onde é usado?](#-onde-ruby-é-usado?)
+- [Por que aprender?](#-por-que-aprender-ruby)
+- [Onde é usado?](#-onde-ruby-é-usado)
 - [Bibliografia](#-bibliografia)
-- [Rodapé](#rodapé)
+- [Rodapé](#informações-adicionais)
 
 ## 📜 História
 Ruby foi criado em 1993 (mas lançado somente em 1995), no Japão, por Yukihiro Matsumoto (Matz). Ela é uma linguagem de programação de [tipagem forte](#i-tipagem) e [dinâmica](#i-tipagem).
