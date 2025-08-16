@@ -9,6 +9,8 @@
 - [Bibliografia](#-bibliografia)
 - [Rodapé](#informações-adicionais)
 
+<br>
+
 ## 📜 História
 Ruby foi criado em 1993 (mas lançado somente em 1995), no Japão, por Yukihiro Matsumoto (Matz). Ela é uma linguagem de programação de [tipagem forte](#i-tipagem) e [dinâmica](#i-tipagem).
 
@@ -17,6 +19,8 @@ O objetivo de Matz era unir a simplicidade do [Perl](#ii-perl) com orientação 
 Ruby ganhou notoriedade mundial principalmente após o lançamento do Ruby on Rails (2004–2005), um framework web que revolucionou a forma de construir aplicações, tornando o desenvolvimento mais rápido e elegante.
 
 Ruby nasceu para tornar a programação **divertida**, **expressiva** e **poderosa**. Excelente para quem quer aprender conceitos sólidos de orientação a objetos, aumentar a produtividade e explorar o desenvolvimento web com um dos frameworks mais influentes da história, o Rails.
+
+<br>
 
 ## 🎯 Por que aprender Ruby?
 
@@ -32,6 +36,7 @@ Ruby nasceu para tornar a programação **divertida**, **expressiva** e **podero
 #### <u>4. Porta de entrada para frameworks poderosos</u>
 - Aprender Ruby é também abrir caminho para o Rails, que ainda é usado em startups, empresas e projetos de larga escala.
 
+<br>
 
 ## 🌍 Onde Ruby é usado?
 
@@ -43,6 +48,7 @@ Ruby nasceu para tornar a programação **divertida**, **expressiva** e **podero
 
 - **Educação**: Curva de aprendizado suave
 
+<br>
 
 ## 📚 Bibliografia
 
@@ -57,6 +63,8 @@ Os livros e documentações que utilizei para aprimorar os meus conhecimentos e 
 [📕 Ruby Wizardry](https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Ruby%20Wizardry%20-%20An%20Introduction%20to%20Programming%20for%20Kids.pdf)
 
 ---
+
+<br>
 
 ## Informações Adicionais
 
@@ -74,8 +82,6 @@ Os livros e documentações que utilizei para aprimorar os meus conhecimentos e 
 x = 10       # aqui é um número
 x = "olá"    # agora virou uma palavra
 ```
-
----
 
 ### II. Perl 
 
