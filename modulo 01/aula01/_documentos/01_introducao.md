@@ -1,4 +1,4 @@
-<img src="assets/banner/introducao.jpg" />
+<img src="../../../assets/banner/introducao.jpg" />
 
 # INTRODUÇÃO À LINGUAGEM RUBY
 
@@ -90,7 +90,7 @@ x = "olá"    # agora virou uma palavra
 > Um lema do Perl é: “_There’s more than one way to do it_” (há mais de um jeito de fazer)
 
 <div align="center">
-    <img src="assets/icons/perl-icon.svg" width="80px">
+    <img src="../../../assets/icons/perl-icon.svg" width="80px">
 </div>
 
 
@@ -99,7 +99,7 @@ x = "olá"    # agora virou uma palavra
 > É uma linguagem criada nos anos 70. Foi uma das primeiras a trabalhar com **tudo é um objeto**. A inspiração para Ruby vem exatamente dessa ideia (tudo é objeto - inclusive números, nulo etc.). Foi muito importante na criação da **programação orientada a objetos**
 
 <div align="center">
-    <img src="assets/icons/smalltalk-icon.svg" width="110px">
+    <img src="../../../assets/icons/smalltalk-icon.svg" width="110px">
 </div>
 
 
@@ -114,11 +114,12 @@ x = "olá"    # agora virou uma palavra
 > Foi inspiração para Ruby na parte da flexibilidade e do poder de expressar ideias diferentes. Muitas ideias de inteligência artificial começaram em Lisp.
 
 <div align="center">
-    <img src="assets/icons/lisp-icon.svg" width="80px">
+    <img src="../../../assets/icons/lisp-icon.svg" width="80px">
 </div>
 
 ---
 <br>
+
 <div align="center">
-    <img src="assets/logo/logo-fedatto.png" width="170px">
+    <img src="../../../assets/logo/logo-fedatto.png" width="170px">
 </div>

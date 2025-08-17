@@ -1,4 +1,4 @@
-<img src="assets/banner/introducao.jpg" />
+<img src="../../../assets/banner/introducao.jpg" />
 
 # CONCEITOS BÁSICOS
 
@@ -189,7 +189,7 @@ puts "nome.object_id, nome2.object_id"
 
 ### 🔄 Conversão de Tipos
 Em Ruby, os valores já têm um tipo, mas você pode converter usando métodos próprios.
-Isso é útil quando a entrada vem como string (ex.: [gets.chomp]()), mas você quer fazer contas, ou quando quer transformar números em texto para concatenar.
+Isso é útil quando a entrada vem como string (ex.: [gets.chomp](#-entrada-de-dados)), mas você quer fazer contas, ou quando quer transformar números em texto para concatenar.
 
 ```ruby
 var = "19"
@@ -334,5 +334,5 @@ Bons estudos!
 ---
 <br>
 <div align="center">
-    <img src="assets/logo/logo-fedatto.png" width="150px">
+    <img src="../../../assets/logo/logo-fedatto.png" width="150px">
 </div>
