@@ -7,7 +7,13 @@ def carregando(tempo_load)
     sleep tempo_load
   end
   puts ""
+end
 
+def typewrite(txt, vel)
+  txt.each_char do |char|
+    print char
+    sleep vel
+  end
 end
 
 def limpar_terminal(so)
@@ -17,9 +23,22 @@ def limpar_terminal(so)
     system("clear")
   end
 end
+
+def pedir(tecla_de_que, usados)
+  loop do
+    print "Botão para #{tecla_de_que}: "
+    t = gets.chomp.strip.downcase
+    return t unless t.empty? || usados.include?(t)
+    puts t.empty? ? "Não pode ficar em branco." : "Botão já usado como atalho. Escolha outro."
+  end
+end
 # REGIÃO DO SISTEMA - NÃO MEXER! 
 
 def criacao
+  info = {}
+
+  tempo_load = 1
+
   show   = ->(nome=nil, idade=nil, so=nil) do
     puts "\n+-------------------------+"
     puts "1. Nome = #{nome || '-'}"
@@ -44,7 +63,6 @@ def criacao
   nome = gets.chomp
 
   if nome.downcase == ENV['USERNAME']
-    puts "Muito obrigado, #{nome}!"
   
   else
     puts "Não minta para mim, #{ENV['USERNAME']}\n\n"
@@ -60,15 +78,17 @@ def criacao
     end #end do CASE
 
   end #end do ELSE
+  info[:nome] = nome
+  show.call(nome)
   
 
   #IDADE
-  show.call(nome)
   print "Qual a sua idade? "
   idade = gets.chomp.to_i
-
-
+  
+  
   # SISTEMA OPERACIONAL
+  info[:idade] = idade
   show.call(nome, idade)
   puts"[1] Windows\n[2] Linux\n[3] MacOS"
   print "Qual o seu Sistema Operacional? "
@@ -83,12 +103,179 @@ def criacao
     so = "MacOS"
   end
 
-  show.call(nome, idade, so)
+  show.call(nome, idade, so); sleep 1
+  info[:so] = so
+  # Adicionar aqui uma forma do usuário editar as informações caso alguma esteja errada.
 
-  tempo_load = 1
-  carregando(tempo_load)
+  limpar_terminal(so)
+
+
+  # PERSONALIZAÇÃO #
+  txt = "Essa frase é apenas para fins de testes. Essa será a sensação ao ler os textos do jogo nessa velocidade."
+  puts "Vamos personalizar algumas coisas!\n\n"
   
 
+  # VELOCIDADE DE TEXTO
+  loop do
+    puts "============================="
+    puts "|    VELOCIDADE DE TEXTO    |"
+    puts "=============================\n\n"; sleep 1
+    puts "Escolha a opção que mais lhe agrada:"
+    carregando(0.5)
+    puts "[1]0.05s \n[2]0.1s \n[3]0.2s\n[4]Personalizar"
+    print "=== Comando: "
+    vel = gets.chomp
+    puts"\n"
+    
+    case vel
+    when "1"
+      vel = 0.05
+
+      puts "Velocidade do texto: | #{vel} |"; sleep 0.1
+
+      typewrite(txt, vel)
+
+      puts "\n---"
+      puts "Gostou da velocidade do texto?"
+      print "[S/N] "
+      x = gets.chomp.downcase
+
+      if x == "s"
+        carregando(tempo_load)
+        info[:vel] = vel
+        break
+      
+      elsif x == "n"
+        puts "Indo para o menu para mudar"
+        limpar_terminal(so)
+
+      else
+        puts "Comando desconhecido"
+        limpar_terminal(so)
+
+      end
+    
+    when "2"
+      vel = 0.1
+
+      puts "Velocidade do texto: | #{vel} |"; sleep 0.3
+
+      typewrite(txt, vel)
+
+      puts "\n---"
+      puts "Gostou da velocidade do texto?"
+      print "[S/N] "
+      x = gets.chomp.downcase
+
+      if x == "s"
+        carregando(tempo_load)
+        info[:vel] = vel
+        break
+      
+      elsif x == "n"
+        puts "Indo para o menu para mudar"
+        limpar_terminal(so)
+
+      else
+        puts "Comando desconhecido"
+        limpar_terminal(so)
+        
+      end
+    
+    when "3" 
+      vel = 0.2
+
+      puts "Velocidade do texto: | #{vel} |"; sleep 0.3
+
+      typewrite(txt, vel)
+
+      puts "\n---"
+      puts "Gostou da velocidade do texto?"
+      print "[S/N] "
+      x = gets.chomp.downcase
+
+      if x == "s"
+        carregando(tempo_load)
+        info[:vel] = vel
+        break
+      
+      elsif x == "n"
+        puts "Indo para o menu para mudar"
+        limpar_terminal(so)
+
+      else
+        puts "Comando desconhecido"
+        limpar_terminal(so)
+      end
+
+    when "4" 
+      vel = nil
+
+      print"Qual a velocidade que você deseja? [0.00] "
+      vel = gets.chomp.to_f
+
+      puts "Velocidade do texto: | #{vel} |"; sleep 0.3
+
+      typewrite(txt, vel)
+
+      puts "\n---"
+      puts "Gostou da velocidade do texto?"
+      print "[S/N] "
+      x = gets.chomp.downcase
+
+      if x == "s"
+        carregando(tempo_load)
+        info[:vel] = vel
+        break
+      
+      elsif x == "n"
+        puts "Indo para o menu para mudar"
+        limpar_terminal(so)
+
+      else
+        puts "Comando desconhecido"
+        limpar_terminal(so)
+      end
+
+    else
+      puts "Opção inválida."
+    end
+  end
+
+  # ATALHOS DO TECLADO
+  loop do
+    txt = "Agora vamos definir os botões que você usará durante a sua aventura. Lembro-lhe que podes usar apenas botões de números e letras para esses atalhos."
+
+    puts "============================="
+    puts "|    ATALHOS DO TECLADO     |"
+    puts "=============================\n\n"; sleep 1
+
+    typewrite(txt, info[:vel])
+
+    atalhos = {}
+    usados = []
+
+    atalhos[:confirmar] = pedir("confirmar", usados); usados << atalhos[:confirmar]
+    atalhos[:cancelar] = pedir("cancelar", usados); usados << atalhos[:cancelar]
+    atalhos[:mapa] = pedir("mapa", usados); usados << atalhos[:mapa]
+    atalhos[:menu] = pedir("menu", usados); usados << atalhos[:menu]
+  end
+
+  puts "\nAtalhos definidos:"
+  atalhos.each do |acao, tecla|
+    puts "#{acao.capitalize}: #{tecla}"
+  end
+  
+  
+
+
+
+
+
+
+  
+  carregando(tempo_load)
+  
   limpar_terminal(so)
 
 end
