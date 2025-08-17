@@ -18,7 +18,7 @@
 ### 📝 Saída de Dados
 Quando você quer que o computador fale alguma coisa para você ("_printe_" na tela), você usa comandos de saída.
 
-#### === **puts** ===
+### 1. **puts** 
 Sempre pula uma linha depois.
 > _Imagina que o ```puts``` é como quando você fala alto e ainda dá um “enter” no final._
 
@@ -26,13 +26,13 @@ Sempre pula uma linha depois.
 puts "Oi, tudo bem?"
 puts "Meu nome é Victor"
 ```
-Saída:
+_Saída_:
 ```cmd
 Oi, tudo bem?
 Meu nome é Victor
 ```
 
-#### === **print** === 
+### 2. **print** 
 
 Ele mostra, mas não pula de linha automaticamente (se quiser, use ```\n``` para pular).
 
@@ -43,12 +43,12 @@ print "Oi, "
 print "tudo bem?"
 ```
 
-Saída:
+_Saída_:
 ```cmd
 Oi, tudo bem?
 ```
 
-#### === **p** ===
+### 3. **p**
 
 Bom para debug (testar seu código).
 
@@ -60,7 +60,7 @@ p 5
 p [1, 2, 3]
 ```
 
-Saída:
+_Saída_:
 ```cmd
 "Oi"
 5
@@ -71,7 +71,7 @@ Saída:
 
 No caso da entrada de dados, é quando o computador faz uma pergunta e você responde digitando.
 
-#### === **gets.chomp** ===
+### 1. **gets.chomp**
 Pensa que ```gets``` é como o computador **pegar** (do inglês: **to get**) o que você digitou. Ele sempre guarda como texto (String).
 
 Contudo, o ```gets``` também pega o **Enter** que você deu no final para enviar. Para isso usamos o ```.chomp```, que serve como uma tesoura, cortando o Enter final.
@@ -107,7 +107,7 @@ idade = 20
 puts "Meu nome é #{nome} e tenho #{idade} anos."
 ```
 
-Saída:
+_Saída_:
 ```cmd
 Meu nome é Victor e tenho 20 anos.
 ```
@@ -129,7 +129,7 @@ menu = {pao: 3.0, baguete: 4.0}
 
 Em Ruby, cada variável pode ter tipos diferentes de coisas dentro. As principais são:
 
-#### 1. String (palavra)
+#### 1. **String** (palavra)
 
 ```ruby
 #Deve estar sempre entre aspas 
@@ -137,35 +137,35 @@ Em Ruby, cada variável pode ter tipos diferentes de coisas dentro. As principai
 suco = "laranja"
 ```
 
-#### 2. Integer (número inteiro)
+#### 2. **Integer** (número inteiro)
 ```ruby
 #Números sem vírgula (positivo, negativo...) 
 
 idade = 20
 ```
 
-#### 3. Float (número com vírgula)
+#### 3. **Float** (número com vírgula)
 ```ruby
 #Números decimais (usa-se apenas ponto) 
 
 nota = 9.9
 ```
 
-#### 4. Boolean (Verdadeiro ou Falso)
+#### 4. **Boolean** (Verdadeiro ou Falso)
 ```ruby
 #Represena lógica: true or false 
 
 estudante = true
 ```
 
-#### 5. Array (lista de coisas)
+#### 5. **Array** (lista de coisas)
 ```ruby
 #Uma coleção de valores 
 
 frutas = ["maçã", "banana", "uva"]
 ```
 
-#### 6. Hash (como um dicionário)
+#### 6. **Hash** (como um dicionário)
 ```ruby
 #Guarda pares de chave → valor 
 
@@ -174,7 +174,7 @@ pessoa = {"nome" => "Victor", "idade" => 20}
 menu = {pao: 3.0, baguete: 4.0, suco: 1.5}
 ```
 
-#### 7. Symbol (objeto imutável)
+#### 7. **Symbol** (objeto imutável)
 ```ruby
 # Sempre começa com : 
 # Símbolo é apenas um objeto que ocupa sempre o mesmo espaço na memória.
@@ -204,3 +204,6 @@ var.to_sym   # Symbol
 ---
 
 <br>
+
+## Operadores Matemáticos
+
