@@ -29,13 +29,13 @@ def pedir(tecla_de_que, usados)
     print "Botão para #{tecla_de_que}: "
     t = gets.chomp.strip.downcase
     return t unless t.empty? || usados.include?(t)
-    puts t.empty? ? "Não pode ficar em branco." : "Botão já usado como atalho. Escolha outro."
+    puts t.empty? ? "|X| Não pode ficar em branco. |X|" : "|X| Botão já usado como atalho. Escolha outro. |X|"
   end
 end
 # REGIÃO DO SISTEMA - NÃO MEXER! 
 
 def criacao
-  info = {}
+  $info = {}
 
   tempo_load = 1
 
@@ -59,37 +59,42 @@ def criacao
   
 
   # NOME
-  print "Qual o seu nome? "
-  nome = gets.chomp
+  loop do
+    print "Qual o seu nome? "
+    nome = gets.chomp
 
-  if nome.downcase == ENV['USERNAME']
+    if nome.downcase == ENV['USERNAME']
+    break
+
+    else
+      puts "Não minta para mim, #{ENV['USERNAME']}\n\n"
+      print "Vai usar esse nome mesmo, #{nome}? [S/N]"
+      ctz = gets.chomp.downcase
+
+      case ctz
+      when "s"
+        puts "Certo, mentiroso."
+        $info[:nome] = nome
+        break
+      when "n"
+        puts""
+
+      else 
+        puts "Comando desconhecido\n\n"
+      end 
+    end
+  end
+
+  show.call($info[:nome])
   
-  else
-    puts "Não minta para mim, #{ENV['USERNAME']}\n\n"
-    print "Vai usar esse nome mesmo, #{nome}? [S/N]"
-    ctz = gets.chomp.downcase
-
-    case ctz
-    when "s"
-      puts "Certo, mentiroso."
-    when "n"
-      print "Qual o seu nome? "
-      nome = gets.chomp
-    end #end do CASE
-
-  end #end do ELSE
-  info[:nome] = nome
-  show.call(nome)
-  
-
   #IDADE
   print "Qual a sua idade? "
   idade = gets.chomp.to_i
   
   
   # SISTEMA OPERACIONAL
-  info[:idade] = idade
-  show.call(nome, idade)
+  $info[:idade] = idade
+  show.call($info[:nome], $info[:idade])
   puts"[1] Windows\n[2] Linux\n[3] MacOS"
   print "Qual o seu Sistema Operacional? "
   so = gets.chomp
@@ -103,8 +108,8 @@ def criacao
     so = "MacOS"
   end
 
-  show.call(nome, idade, so); sleep 1
-  info[:so] = so
+  $info[:so] = so
+  show.call($info[:nome], $info[:idade], $info[:so]); sleep 1
   # Adicionar aqui uma forma do usuário editar as informações caso alguma esteja errada.
 
   limpar_terminal(so)
@@ -142,7 +147,7 @@ def criacao
 
       if x == "s"
         carregando(tempo_load)
-        info[:vel] = vel
+        $info[:vel] = vel
         break
       
       elsif x == "n"
@@ -169,7 +174,7 @@ def criacao
 
       if x == "s"
         carregando(tempo_load)
-        info[:vel] = vel
+        $info[:vel] = vel
         break
       
       elsif x == "n"
@@ -196,7 +201,7 @@ def criacao
 
       if x == "s"
         carregando(tempo_load)
-        info[:vel] = vel
+        $info[:vel] = vel
         break
       
       elsif x == "n"
@@ -225,7 +230,7 @@ def criacao
 
       if x == "s"
         carregando(tempo_load)
-        info[:vel] = vel
+        $info[:vel] = vel
         break
       
       elsif x == "n"
@@ -243,39 +248,29 @@ def criacao
   end
 
   # ATALHOS DO TECLADO
-  loop do
-    txt = "Agora vamos definir os botões que você usará durante a sua aventura. Lembro-lhe que podes usar apenas botões de números e letras para esses atalhos."
+  txt = "Agora vamos definir os botões que você usará durante a sua aventura. Lembro-lhe que podes usar apenas botões de números e letras para esses atalhos."
 
-    puts "============================="
-    puts "|    ATALHOS DO TECLADO     |"
-    puts "=============================\n\n"; sleep 1
+  puts "============================="
+  puts "|    ATALHOS DO TECLADO     |"
+  puts "=============================\n\n"; sleep 1
 
-    typewrite(txt, info[:vel])
+  typewrite(txt, $info[:vel])
+  puts ""
 
-    atalhos = {}
-    usados = []
+  $atalhos = {}
+  usados = []
 
-    atalhos[:confirmar] = pedir("confirmar", usados); usados << atalhos[:confirmar]
-    atalhos[:cancelar] = pedir("cancelar", usados); usados << atalhos[:cancelar]
-    atalhos[:mapa] = pedir("mapa", usados); usados << atalhos[:mapa]
-    atalhos[:menu] = pedir("menu", usados); usados << atalhos[:menu]
-  end
-
+  $atalhos[:confirmar] = pedir("confirmar", usados); usados << $atalhos[:confirmar]
+  $atalhos[:cancelar] = pedir("cancelar", usados); usados << $atalhos[:cancelar]
+  $atalhos[:mapa] = pedir("mapa", usados); usados << $atalhos[:mapa]
+  $atalhos[:menu] = pedir("menu", usados); usados << $atalhos[:menu]
+  
   puts "\nAtalhos definidos:"
-  atalhos.each do |acao, tecla|
+  $atalhos.each do |acao, tecla|
     puts "#{acao.capitalize}: #{tecla}"
   end
   
-  
-
-
-
-
-
-
-  
   carregando(tempo_load)
-  
   limpar_terminal(so)
 
 end
@@ -364,7 +359,9 @@ end
 if x == 1
   criacao
   introd
-  cena1
+
+  puts $info
+
 elsif x == 2
   exit!
 end                                          
