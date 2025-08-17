@@ -207,3 +207,132 @@ var.to_sym   # Symbol
 
 ## Operadores Matemáticos
 
+Os operadores matemáticos são as operações usadas para realizar contas com números.
+
+- Soma (+)
+
+- Subtração (-)
+
+- Multiplicação (*)
+
+- Divisão (/) --- ⚠️Atenção: se dividir números inteiros, o Ruby dá inteiro (arredonda para baixo). 
+
+- Módulo (%)
+
+- Exponenciação (**) - (Potência)
+```ruby
+
+puts 5 + 2      # 7
+puts 5 - 2      # 3
+puts 5 * 2      # 10
+puts 5 / 2      # 2 (divisão de inteiros = inteiro)
+puts 5 % 2      # 1
+puts 5 ** 2     # 25
+
+```
+
+## Atribuição com operadores
+
+Atualizar valores ao longo do código.
+
+```ruby
+x = 10
+x += 5   # igual a x = x + 5
+puts x   # 15
+
+x -= 3   # igual a x = x - 3
+puts x   # 12
+
+x *= 2   # igual a x = x * 2
+puts x   # 24
+
+x /= 4   # igual a x = x / 4
+puts x   # 6
+```
+
+## ⚖️ Operadores de Comparação
+
+São usados para comparar valores. Eles respondem sempre true ou false.
+
+```ruby
+# ==== IGUAL (==) ====
+puts 5 == 5   # true
+puts 5 == 4   # false
+
+# ==== DIFERENTE (!=) ====
+puts 5 != 4   # true
+puts 5 != 5   # false
+
+# ==== MAIOR (>) / MENOR (<) ====
+puts 10 > 3   # true
+puts 2 < 1    # false
+
+# ==== MAIOR OU IGUAL (>=) / MENOR OU IGUAL (<=) ====
+puts 5 >= 5   # true
+puts 3 <= 2   # false
+```
+
+## 🔗 Operadores Lógicos
+
+Agora entramos na lógica, como se fosse responder "sim" ou "não".
+
+### 1. AND (&&)
+Só é verdadeiro se as duas condições forem verdadeiras.
+```ruby
+idade = 20
+tem_carteira = true
+
+puts idade >= 18 && tem_carteira   # true
+```
+> “Tenho 18 anos E carteira de motorista?”
+
+### 2. OR (||)
+É verdadeiro se pelo menos uma condição for verdadeira.
+
+```ruby
+sol = false
+feriado = true
+
+puts sol || feriado   # true
+```
+> “Hoje tem sol OU é feriado?” Basta um ser verdadeiro.
+
+### 3. NOT (!)
+Inverte o valor lógico.
+
+```ruby
+estudando = false
+puts !estudando   # true
+```
+
+> “Não estou estudando” vira verdadeiro se eu realmente não estiver.
+
+<br>
+
+## 🧮 4. Operadores de comparação extra
+
+### SPACESHIP (<=>)
+Retorna
+- ```-1``` se o da esquerda for menor;
+- ```0``` se forem iguais
+- ```1``` se o da esquerda for maior;
+
+```ruby
+puts 5 <=> 10   # -1
+puts 10 <=> 10  # 0
+puts 15 <=> 10  # 1
+```
+
+> É usado bastante em ordenação.
+
+---
+
+Até a Próxima aula!
+
+Bons estudos!
+
+---
+<br>
+<div align="center">
+    <img src="assets/logo/logo-fedatto.png" width="150px">
+</div>
