@@ -9,7 +9,7 @@
 
 # 📚 Aula 05 – Entrada e Saída de Arquivos em Ruby   
 
-### [Leitura](#-leitura-de-arquivos) • [Escrita](#%EF%B8%8F-escrita-de-arquivos) • [Modos-de-abertura](#-modos-de-abertura) • [Tratamento-de-erros](#-tratamento-de-erros)  
+### [Leitura](#-leitura-de-arquivos) • [Escrita](#%EF%B8%8F-escrita-de-arquivos) • [Modos-de-abertura](#-modos-de-abertura) • [Tratamento-de-erros](#%EF%B8%8F-tratamento-de-erros)  
 
 <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" />
 <img src="https://img.shields.io/badge/Arquivos-%23FFB347?style=for-the-badge" />
