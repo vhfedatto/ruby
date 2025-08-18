@@ -59,29 +59,40 @@ def criacao
   
 
   # NOME
+  user_pc = (ENV['USERNAME'] || ENV['USER'] || "").downcase
+  done = false
   loop do
     print "Qual o seu nome? "
     nome = gets.chomp
 
-    if nome.downcase == ENV['USERNAME']
-    break
+    if nome.downcase == user_pc
+      $info[:nome] = nome
+      break
 
     else
-      puts "Não minta para mim, #{ENV['USERNAME']}\n\n"
-      print "Vai usar esse nome mesmo, #{nome}? [S/N]"
-      ctz = gets.chomp.downcase
+      puts "Não minta para mim, #{user_pc}\n\n"
 
-      case ctz
-      when "s"
-        puts "Certo, mentiroso."
-        $info[:nome] = nome
-        break
-      when "n"
-        puts""
+      loop do
+        print "Vai usar esse nome mesmo, #{nome}? [S/N] "
+        ctz = gets.chomp.downcase
 
-      else 
-        puts "Comando desconhecido\n\n"
-      end 
+        case ctz
+        when "s"
+          puts "Certo, mentiroso."
+          $info[:nome] = nome
+          done = true
+          break
+
+        when "n"
+          puts""
+          break
+  
+        else 
+          puts "Comando desconhecido\n\n"
+        end 
+      end
+
+      break if done
     end
   end
 
@@ -91,28 +102,37 @@ def criacao
   print "Qual a sua idade? "
   idade = gets.chomp.to_i
   
-  
   # SISTEMA OPERACIONAL
   $info[:idade] = idade
   show.call($info[:nome], $info[:idade])
-  puts"[1] Windows\n[2] Linux\n[3] MacOS"
-  print "Qual o seu Sistema Operacional? "
-  so = gets.chomp
+  loop do
+    puts"[1] Windows\n[2] Linux\n[3] MacOS"
+    print "Qual o seu Sistema Operacional? "
+    so = gets.chomp
 
-  case so
-  when "1"
-    so = "Windows"
-  when "2"
-    so = "Linux"
-  when "3"
-    so = "MacOS"
+    case so
+    when "1"
+      so = "Windows"
+      $info[:so] = so
+      break
+    when "2"
+      so = "Linux"
+      $info[:so] = so
+      break
+    when "3"
+      so = "MacOS"
+      $info[:so] = so
+      break
+    else
+      puts "Comando desconhecido\n\n"
+    end
+
   end
 
-  $info[:so] = so
   show.call($info[:nome], $info[:idade], $info[:so]); sleep 1
   # Adicionar aqui uma forma do usuário editar as informações caso alguma esteja errada.
 
-  limpar_terminal(so)
+  limpar_terminal($info[:so])
 
 
   # PERSONALIZAÇÃO #
@@ -120,7 +140,7 @@ def criacao
   puts "Vamos personalizar algumas coisas!\n\n"
   
 
-  # VELOCIDADE DE TEXTO
+  # VELOCIDADE DE TEXTO - Analisar situações de erros.
   loop do
     puts "============================="
     puts "|    VELOCIDADE DE TEXTO    |"
@@ -152,11 +172,12 @@ def criacao
       
       elsif x == "n"
         puts "Indo para o menu para mudar"
-        limpar_terminal(so)
+        limpar_terminal($info[:so])
 
       else
-        puts "Comando desconhecido"
-        limpar_terminal(so)
+        puts "Comando desconhecido."
+        sleep 0.5
+        limpar_terminal($info[:so])
 
       end
     
@@ -179,11 +200,12 @@ def criacao
       
       elsif x == "n"
         puts "Indo para o menu para mudar"
-        limpar_terminal(so)
+        limpar_terminal($info[:so])
 
       else
         puts "Comando desconhecido"
-        limpar_terminal(so)
+        sleep 0.5
+        limpar_terminal($info[:so])
         
       end
     
@@ -206,11 +228,12 @@ def criacao
       
       elsif x == "n"
         puts "Indo para o menu para mudar"
-        limpar_terminal(so)
+        limpar_terminal($info[:so])
 
       else
         puts "Comando desconhecido"
-        limpar_terminal(so)
+        sleep 0.5
+        limpar_terminal($info[:so])
       end
 
     when "4" 
@@ -235,19 +258,20 @@ def criacao
       
       elsif x == "n"
         puts "Indo para o menu para mudar"
-        limpar_terminal(so)
+        limpar_terminal($info[:so])
 
       else
         puts "Comando desconhecido"
-        limpar_terminal(so)
+        sleep 0.5
+        limpar_terminal($info[:so])
       end
 
     else
-      puts "Opção inválida."
+      puts "Opção inválida.\n\n"
     end
   end
 
-  # ATALHOS DO TECLADO
+  # ATALHOS DO TECLADO - Permitir apenas um botão para cada opção.
   txt = "Agora vamos definir os botões que você usará durante a sua aventura. Lembro-lhe que podes usar apenas botões de números e letras para esses atalhos."
 
   puts "============================="
@@ -271,7 +295,7 @@ def criacao
   end
   
   carregando(tempo_load)
-  limpar_terminal(so)
+  limpar_terminal($info[:so])
 
 end
 
@@ -364,4 +388,4 @@ if x == 1
 
 elsif x == 2
   exit!
-end                                          
+end                                 
