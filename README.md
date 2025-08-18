@@ -3,6 +3,7 @@
 </div>-->
 <!--<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=vhfedatto.ruby&left_color=darkred&right_color=palevioletred" width="100px"/>-->
 
+
 # 📚💎 Ruby Study Repository 
 
 Este repositório contém meus estudos, anotações e exercícios práticos relacionados à linguagem **Ruby** <!--<img src="assets/icons/python-icon.svg" width="16px">-->.  
@@ -37,6 +38,16 @@ O objetivo é documentar minha evolução, criar uma base de códigos reutilizá
    ruby nome_do_arquivo.rb
    ```
   > É recomendado ter o Ruby 3.x instalado e configurado no PATH do sistema.
+
+---
+
+<div align="center"> 
+
+<img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" height="200px" />
+<img src="https://img.shields.io/badge/Estudos-%23FFB347?style=for-the-badge" height="200px"/>
+<img src="https://img.shields.io/badge/Aulas Simples-%23FFD700?style=for-the-badge" height="200px" />
+
+</div>
 
 ---
 
