@@ -1,4 +1,4 @@
-# Exercícios da Aula 01 de Ruby
+# Exercícios da Aula 01-02 de Ruby
 
 ### Quais os assuntos?
 1. Conversão de variáveis
