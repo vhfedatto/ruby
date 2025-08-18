@@ -8,7 +8,7 @@
 
 # 🍣 Aula 04 – Estruturas e Fluxos Avançados em Ruby  
 
-### [Operadores Lógicos](#-operadores-lógicos-avançados) • [Ranges](#-ranges) • [Iteradores Avançados](#-iteradores-avançados) • [Strings](#-manipulação-de-strings) • [Números](#7️⃣-manipulação-de-números)  
+### [Operadores Lógicos](#-operadores-lógicos-avançados) • [Ranges](#-ranges-intervalos) • [Iteradores Avançados](#-iteradores-avançados) • [Strings](#-manipulação-de-strings) • [Números](#7️⃣-manipulação-de-números)  
 
 <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" />
 <img src="https://img.shields.io/badge/Lógica-%23FFB347?style=for-the-badge" />
