@@ -1,0 +1,1 @@
+File.write("modulo 01/aula05/codigos/anotacoes.txt", "Ruby é divertido")
