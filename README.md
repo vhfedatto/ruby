@@ -20,7 +20,9 @@ O objetivo é documentar minha evolução, criar uma base de códigos reutilizá
 - Variáveis, tipos e conversão
 - Operadores aritméticos e de comparação
 - Condicionais e Estruturas de Repetição
-- Array, Hash e Métodos 
+- Array, Hash e Métodos
+- Ranges, Iteradores, Operadores Lógicos
+- Arquivos, Input, Output, Erro Handling
 
 ---
 
