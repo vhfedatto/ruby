@@ -40,6 +40,8 @@ puts conteudo
 
 ---
 
+<br>
+
 ## ✍️ ESCRITA DE ARQUIVOS
 
 Escrever em um arquivo é como **anotar em um caderno**: você guarda informações para ler depois.
@@ -57,6 +59,9 @@ File.write("anotacoes.txt", "Ruby é divertido!")
 - É simples e eficiente para textos curtos.  
 
 ---
+
+<br>
+
 
 ## 🔑 MODOS DE ABERTURA
 
@@ -82,6 +87,8 @@ end
 
 ---
 
+<br>
+
 ## ⚠️ TRATAMENTO DE ERROS
 
 Na biblioteca, às vezes um livro não existe. Em Ruby, isso gera um erro.  
@@ -106,6 +113,8 @@ end
 - Isso é útil em **sistemas de produção**, para evitar travamentos.  
 
 ---
+
+<br>
 
 ## 📚 EXEMPLO COMPLETO – Sistema da Biblioteca
 
@@ -136,7 +145,9 @@ end
 
 ---
 
-## ✅ RESUMO DA AULA 04
+<br>
+
+## ✅ RESUMO DA AULA 05
 - `File.read` → lê tudo de uma vez.  
 - `File.write` → escreve, apagando conteúdo antigo.  
 - `File.open("arquivo", "modo")` → maior controle sobre leitura e escrita.  
