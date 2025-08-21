@@ -20,6 +20,8 @@ Peça 4 entradas (true/false) e imprima “Entrada liberada” ou “Entrada neg
 - As mesas disponíveis no salão são **1..20**.  
 Peça **idade** e **número da mesa** e informe as duas validações.
 
+[Resposta](resolucao/r02.rb)
+
 ---
 
 ## 3) Preparando o sushi (map/select/reject)
