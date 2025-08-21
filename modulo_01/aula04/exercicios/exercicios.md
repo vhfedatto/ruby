@@ -10,7 +10,7 @@ Cada exercício tem **enunciado** e **resolução**.
 O cliente só pode entrar se **(tem_dinheiro && (tem_mesa || tem_reserva))** e **não** estiver **descalço**.  
 Peça 4 entradas (true/false) e imprima “Entrada liberada” ou “Entrada negada”.
 
-[Resposta](modulo_01/aula04/exercicios/resolucao/r01.rb)
+[Resposta](resolucao/r01.rb)
 
 ---
 
