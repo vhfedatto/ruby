@@ -1,3 +1,1 @@
-preco = 19.990129932031203
-
-puts preco.round(4)
+puts "Olá, my new world"
