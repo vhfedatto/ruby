@@ -10,18 +10,7 @@ Cada exercício tem **enunciado** e **resolução**.
 O cliente só pode entrar se **(tem_dinheiro && (tem_mesa || tem_reserva))** e **não** estiver **descalço**.  
 Peça 4 entradas (true/false) e imprima “Entrada liberada” ou “Entrada negada”.
 
-**Resolução**
-```ruby
-# porteiro.rb
-print "Tem dinheiro? (true/false): "; tem_dinheiro = gets.chomp == "true"
-print "Tem mesa? (true/false): "; tem_mesa = gets.chomp == "true"
-print "Tem reserva? (true/false): "; tem_reserva = gets.chomp == "true"
-print "Está descalço? (true/false): "; descalco = gets.chomp == "true"
-
-pode_entrar = tem_dinheiro && (tem_mesa || tem_reserva) && !descalco
-
-puts pode_entrar ? "Entrada liberada" : "Entrada negada"
-```
+[Resposta](resolucao/r01.rb)
 
 ---
 
@@ -31,18 +20,7 @@ puts pode_entrar ? "Entrada liberada" : "Entrada negada"
 - As mesas disponíveis no salão são **1..20**.  
 Peça **idade** e **número da mesa** e informe as duas validações.
 
-**Resolução**
-```ruby
-# validacao.rb
-print "Idade: "; idade = gets.to_i
-print "Mesa desejada (1..20): "; mesa = gets.to_i
-
-apto = (18..65).include?(idade)
-mesa_valida = (1..20).include?(mesa)
-
-puts apto ? "Idade apta." : "Idade não apta."
-puts mesa_valida ? "Mesa válida." : "Mesa inexistente."
-```
+[Resposta](resolucao/r02.rb)
 
 ---
 
