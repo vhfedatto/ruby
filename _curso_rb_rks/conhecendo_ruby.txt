@@ -1,0 +1,15 @@
+Por que usar Ruby?
+- Ruby tem vários paradigmas - linguagem imperativa (descreve passo a passo como fazer algo.)
+- extensão é ".rb"
+- Ordens claras.
+
+- Linguagem interpretada - executada direto do código fonte - não precisa compilar;
+- Dinâmicamente tipada;
+- Totalmente orientado a objetos;
+- Sintaxe amigável;
+- Não precisa de () etc. - e é case sensitive;
+- Variáveis e métodos feitos em snake case; -> Convenção: snake_case - first_name
+
+- Constantes começam com letra MAIUSCULA;
+- Classes: São receitas para a criação de intâncias de objetos daquela classe -> é em PascalCase != camelCase
+- Ruby roda no servidor e dá para fazer interface também. 

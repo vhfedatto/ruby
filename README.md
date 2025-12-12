@@ -43,14 +43,14 @@ O objetivo é documentar minha evolução, criar uma base de códigos reutilizá
 
 <div align="center"> 
 
-<img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" height="200px" />
-<img src="https://img.shields.io/badge/Estudos-%23FFB347?style=for-the-badge" height="200px"/>
-<img src="https://img.shields.io/badge/Aulas Simples-%23FFD700?style=for-the-badge" height="200px" />
+   <img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" height="200px" />
+   <img src="https://img.shields.io/badge/Estudos-%23FFB347?style=for-the-badge" height="200px"/>
+   <img src="https://img.shields.io/badge/Aulas Simples-%23FFD700?style=for-the-badge" height="200px" />
 
 </div>
 
 ---
 
 <div align="center">
-  <img src="assets/logo/logo-fedatto.png" width="150" />
+  <img src="meu_curso/assets/logo/logo-fedatto.png" width="150" />
 </div>
