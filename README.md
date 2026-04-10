@@ -11,7 +11,7 @@ O objetivo é documentar minha evolução, criar uma base de códigos reutilizá
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas
+## 🛠️ Tecnologias e Ferramentas:
 - **Linguagem:** Ruby 3.4
 - **Editor:** VS Code
 
