@@ -1,6 +1,6 @@
 <!--<div align="center">
    <img src="assets/icons/ruby.svg" width="100px">
-</div>.-->
+</div>-->
 <!--<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=vhfedatto.ruby&left_color=darkred&right_color=palevioletred" width="100px"/>-->
 
 
