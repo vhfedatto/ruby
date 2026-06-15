@@ -1,6 +1,6 @@
-<div>
-    <img src="../../../assets/banner/banner-complementos.jpg">
-</div>
+<!-- <div>
+<img src="../../../assets/banner/banner-complementos.jpg">
+</div>-->
 
 <br>
 
