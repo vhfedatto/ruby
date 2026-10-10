@@ -4,7 +4,7 @@
 <!--<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=vhfedatto.ruby&left_color=darkred&right_color=palevioletred" width="100px"/>-->
 
 
-# 📚💎 Ruby Study Repository:
+# 📚💎 Ruby Study Repository
 
 Este repositório contém meus estudos, anotações e exercícios práticos relacionados à linguagem **Ruby** <!--<img src="assets/icons/python-icon.svg" width="16px">-->.  
 O objetivo é documentar minha evolução, criar uma base de códigos reutilizáveis e aplicar conceitos aprendidos.
